@@ -8,7 +8,7 @@ html, body {
 $text_color_gray: gray;
 $text_color_white: white;
 
-
+//--------------------HEADER-----------//
 .wraper {
   min-height: 100%;
   display: flex;
@@ -20,12 +20,17 @@ $text_color_white: white;
     background: #ffffff;
     box-shadow: 0 0 10px 3px #7777;
 
+
     .header_item {
       width: 1220px;
       display: flex;
       margin: auto 15px auto;
       justify-content: space-between;
       align-items: center;
+
+      .fa-x {
+        display: none;
+      }
 
       .fa-solid {
         display: none;
@@ -44,21 +49,25 @@ $text_color_white: white;
     .header_menu {
       .header_menu_btm {
         color: $text_color_gray;
-        border: none;
-        outline: none;
         background: white;
-        height: 50px;
+        text-decoration: none;
+        margin: 5px;
+
+
+        &:hover {
+          color: white;
+          height: 40px;
+          width: 150px;
+          padding: 13px 30px;
+          background: #347bb7;
+          border-radius: 40px;
+          transition: background 2s;
+          margin: 5px;
+
+
+        }
       }
 
-      .header_menu_btm_activ {
-        color: white;
-        border: none;
-        outline: none;
-        height: 40px;
-        padding: 5px 20px;
-        background: #347bb7;
-        border-radius: 40px;
-      }
     }
   }
 
@@ -72,15 +81,17 @@ $text_color_white: white;
 
 @media screen and (max-width: 680px) {
   .wraper {
+    //---------------HEADER-MOB----------//
     .header {
       .header_item {
-        position: relative;
-
         .header_logo {
-
         }
 
-        .fa-solid {
+        .fa-x {
+          display: none;
+        }
+
+        .fa-bars {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -90,41 +101,31 @@ $text_color_white: white;
           height: 40px;
           width: 60px;
           text-align: center;
-
-
         }
 
         .header_menu {
           display: none;
-
-          .active_form {
+          .header_menu_btm{
+          &:hover {
             display: flex;
-            position: absolute;
             justify-content: center;
-            flex-direction: column;
             align-items: center;
-            background: #ffffff;
-            margin: 379px -15px 0 -15px;
-            width: 100vw;
-            box-shadow: 0 10px 9px #7777;
-            .header_menu_btm {
-              width: 150px;
-            }
-            .header_menu_btm_activ {
-              width: 150px;
-            }
-          }
+            padding:4px
+          }}
+        }
 
-          .header_menu_btm {
-            width: 150px;
-          }
-
-          .header_menu_btm_activ {
-            width: 150px;
-          }
+        .active_manu {
+          display: flex;
+          position: absolute;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          background: #ffffff;
+          margin: 257px -15px 0 -15px;
+          width: 100vw;
+          box-shadow: 0 10px 9px #7777;
         }
       }
-
     }
   }
 
