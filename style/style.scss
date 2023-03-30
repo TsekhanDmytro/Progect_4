@@ -3,10 +3,12 @@ html, body {
   position: revert;
   height: 100%;
   font-family: 'PT Sans', sans-serif;
+
 }
 
 $text_color_gray: gray;
 $text_color_white: white;
+
 
 //--------------------HEADER-----------//
 .wraper {
@@ -15,13 +17,14 @@ $text_color_white: white;
   flex-direction: column;
 
   .header {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background: #ffffff;
     box-shadow: 0 0 10px 3px #7777;
+    position: fixed;
 
-
-    .header_item {
+    &_item {
       width: 1220px;
       display: flex;
       margin: auto 15px auto;
@@ -39,7 +42,7 @@ $text_color_white: white;
       .header_logo {
         padding: 5px;
 
-        .header_logo_img {
+        &_img {
           height: 75px;
 
         }
@@ -47,7 +50,7 @@ $text_color_white: white;
     }
 
     .header_menu {
-      .header_menu_btm {
+      &_btm {
         color: $text_color_gray;
         background: white;
         text-decoration: none;
@@ -71,8 +74,42 @@ $text_color_white: white;
     }
   }
 
+  //--------------------TEXT_AND_FORM---------------------//
   .main {
     flex: 1 1 auto;
+    margin-top: 90px;
+
+
+    .text_and_form {
+      display: flex;
+      justify-content: center;
+      background: #f7f7f7;
+
+      &_text, &_form {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      &_text {
+        text-align: center;
+        line-height: 25px;
+
+        &_small, &_big {
+          padding: 0 50px 0 0;
+
+        }
+
+        &_small {
+          color: $text_color_gray;
+        }
+      }
+
+      &_form {
+
+      }
+    }
   }
 
   .footer {
@@ -105,13 +142,15 @@ $text_color_white: white;
 
         .header_menu {
           display: none;
-          .header_menu_btm{
-          &:hover {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding:4px
-          }}
+
+          &_btm {
+            &:hover {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 4px
+            }
+          }
         }
 
         .active_manu {
@@ -127,6 +166,32 @@ $text_color_white: white;
         }
       }
     }
+
+    .main {
+      flex: 1 1 auto;
+      margin-top: 90px;
+
+      .text_and_form {
+        display: flex;
+        flex-direction: column;
+
+        .text_and_form_text {
+          width: 100%;
+
+          &_big, &_small {
+            padding: 10px;
+          }
+
+        }
+
+        .text_and_form_form {
+          padding: 10px;
+        }
+      }
+    }
   }
 
 }
+
+
+// Програмування це крута можливість реалізувати себе в житті, так що можна сказати що це і є моєю цілью

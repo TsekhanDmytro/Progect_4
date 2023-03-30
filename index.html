@@ -13,6 +13,7 @@
 
 <body>
 <div class="wraper">
+    <!---------------------------------HEADER------->
     <header class="header">
         <div class="header_item">
             <a class="header_logo " href="#"><img class="header_logo_img " src="img/logo_Oxit.png" alt="logo_Oxit"></a>
@@ -29,7 +30,77 @@
             </div>
         </div>
     </header>
-    <main class="main">main</main>
+
+    <main class="main">
+        <div class="text_and_form">
+            <div class="text_and_form_text">
+                <h2 class="text_and_form_text_big">Курси програмування у Луцьку</h2>
+                <p class="text_and_form_text_small"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                    distinctio dolor doloremque ipsum
+                    odit. Ad alias amet asperiores consequuntur cum dignissimos dolor eius, eligendi exercitationem
+                    explicabo fugit harum impedit ipsam itaque iure laborum laudantium magni maxime nesciunt nihil nulla
+                    omnis praesentium quisquam quod recusandae, reprehenderit repudiandae saepe suscipit tenetur unde ut
+                    velit voluptatem voluptatum!
+                </p>
+            </div>
+
+            <div class="text_and_form_form">
+                <h2>Зареєструйся на курси</h2>
+                <form name="form">
+                    <div>
+                        <p>Іім'я <img class="required" src="img/icons/required.png" alt="icon">
+                        </p>
+                        <label><input required class="input-stile" placeholder="Іім'я" type="text" name="Name">
+                        </label></div>
+
+                    <div>
+                        <p>Прізвище <img class="required" src="img/icons/required.png"
+                                         alt="icon"></p>
+                        <label><input required class="input-stile" placeholder="Прізвище" type="text" name="Name">
+                        </label>
+                    </div>
+                    <div>
+                        <p>Мене більше цікавить <img class="required"
+                                                     src="img/icons/required.png"
+                                                     alt="icon">
+                        </p>
+                        <label>
+                            <input readonly class="input-stile" placeholder="developer or QA" type="text" name="Name">
+                        </label>
+                    </div>
+                    <div>
+                        <p>Номер телефону <img class="required" src="img/icons/required.png"
+                                               alt="icon"></p>
+                        <label><input required class="input-stile" placeholder="Номер телефону: +38 XXX XX XX XXX"
+                                      pattern="^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$"
+                                      type="tel"
+                                      name="Number">
+                        </label>
+                    </div>
+                    <div>
+                        <p class="input-stile">Email <img class="required" src="img/icons/required.png" alt="icon"></p>
+
+                        <label><input required class="input-stile" placeholder="Email" type="email"
+                                      name="Email"></label>
+                    </div>
+                    <div>
+                        <label
+                                class="lable">
+                            <input required type="checkbox">
+                            Я погоджуюсь із <a href="#">Політикою Конфіденційності</a><img class="required"
+                                                                                           src="img/icons/required.png"
+                                                                                           alt="icon">
+                        </label>
+                    </div>
+                    <div>
+                        <button class="form-bottom">Відправити</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </main>
     <footer class="footer">footer</footer>
 </div>
 

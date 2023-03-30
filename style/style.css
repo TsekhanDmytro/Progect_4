@@ -11,37 +11,39 @@ html, body {
   flex-direction: column;
 }
 .wraper .header {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   background: #ffffff;
   box-shadow: 0 0 10px 3px rgba(119, 119, 119, 0.4666666667);
+  position: fixed;
 }
-.wraper .header .header_item {
+.wraper .header_item {
   width: 1220px;
   display: flex;
   margin: auto 15px auto;
   justify-content: space-between;
   align-items: center;
 }
-.wraper .header .header_item .fa-x {
+.wraper .header_item .fa-x {
   display: none;
 }
-.wraper .header .header_item .fa-solid {
+.wraper .header_item .fa-solid {
   display: none;
 }
-.wraper .header .header_item .header_logo {
+.wraper .header_item .header_logo {
   padding: 5px;
 }
-.wraper .header .header_item .header_logo .header_logo_img {
+.wraper .header_item .header_logo_img {
   height: 75px;
 }
-.wraper .header .header_menu .header_menu_btm {
+.wraper .header .header_menu_btm {
   color: gray;
   background: white;
   text-decoration: none;
   margin: 5px;
 }
-.wraper .header .header_menu .header_menu_btm:hover {
+.wraper .header .header_menu_btm:hover {
   color: white;
   height: 40px;
   width: 150px;
@@ -53,6 +55,28 @@ html, body {
 }
 .wraper .main {
   flex: 1 1 auto;
+  margin-top: 90px;
+}
+.wraper .main .text_and_form {
+  display: flex;
+  justify-content: center;
+  background: #f7f7f7;
+}
+.wraper .main .text_and_form_text, .wraper .main .text_and_form_form {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.wraper .main .text_and_form_text {
+  text-align: center;
+  line-height: 25px;
+}
+.wraper .main .text_and_form_text_small, .wraper .main .text_and_form_text_big {
+  padding: 0 50px 0 0;
+}
+.wraper .main .text_and_form_text_small {
+  color: gray;
 }
 @media screen and (max-width: 680px) {
   .wraper .header .header_item .fa-x {
@@ -72,7 +96,7 @@ html, body {
   .wraper .header .header_item .header_menu {
     display: none;
   }
-  .wraper .header .header_item .header_menu .header_menu_btm:hover {
+  .wraper .header .header_item .header_menu_btm:hover {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +112,23 @@ html, body {
     margin: 257px -15px 0 -15px;
     width: 100vw;
     box-shadow: 0 10px 9px rgba(119, 119, 119, 0.4666666667);
+  }
+  .wraper .main {
+    flex: 1 1 auto;
+    margin-top: 90px;
+  }
+  .wraper .main .text_and_form {
+    display: flex;
+    flex-direction: column;
+  }
+  .wraper .main .text_and_form .text_and_form_text {
+    width: 100%;
+  }
+  .wraper .main .text_and_form .text_and_form_text_big, .wraper .main .text_and_form .text_and_form_text_small {
+    padding: 10px;
+  }
+  .wraper .main .text_and_form .text_and_form_form {
+    padding: 10px;
   }
 }
 
