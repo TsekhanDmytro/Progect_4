@@ -64,7 +64,7 @@ $text_color_white: white;
           padding: 13px 30px;
           background: #347bb7;
           border-radius: 40px;
-          transition: background 2s;
+          transition: .25s ease-out;
           margin: 5px;
 
 
@@ -136,17 +136,33 @@ $text_color_white: white;
           padding-left: 5px;
 
         }
-.checkbox{
-  margin-top: 15px;
-        .lable {
-          color: $text_color_gray;
 
-          & a {
-            color: #347bb7;
-            text-decoration: none;
+        & input {
+          &:focus-visible {
+            box-shadow: 0 0 8px 2px #B1E9FF;
+            border: 1px solid #B1E9FF;
+            background: #fff;
+            color: #525865;
+            border-radius: 4px;
+            outline: none;
+
+            transition: .18s ease-out;
           }
         }
-}
+
+        .checkbox {
+          margin-top: 15px;
+
+          .lable {
+            color: $text_color_gray;
+
+            & a {
+              color: #347bb7;
+              text-decoration: none;
+            }
+          }
+        }
+
         & .form-button {
           text-align: center;
 
@@ -266,7 +282,6 @@ $text_color_white: white;
       }
     }
   }
-
 }
 
 
