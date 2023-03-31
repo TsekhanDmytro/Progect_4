@@ -106,8 +106,11 @@ $text_color_white: white;
         }
       }
 
-      &_form {
-
+      &_form div label .input-stile {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+border:$text_color_gray solid 1px;
       }
     }
   }
