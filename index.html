@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/slider.css">
 
     <title>Progect 4</title>
 </head>
@@ -32,82 +33,128 @@
     </header>
 
     <main class="main">
-        <!--        -->
-        <div class="text_and_form">
-            <div class="text_and_form_text">
-                <h2 class="text_and_form_text_big">Курси програмування у Луцьку</h2>
-                <p class="text_and_form_text_small"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-                    distinctio dolor doloremque ipsum
-                    odit. Ad alias amet asperiores consequuntur cum dignissimos dolor eius, eligendi exercitationem
-                    explicabo fugit harum impedit ipsam itaque iure laborum laudantium magni maxime nesciunt nihil nulla
-                    omnis praesentium quisquam quod recusandae, reprehenderit repudiandae saepe suscipit tenetur unde ut
-                    velit voluptatem voluptatum!
-                </p>
+        <!--------TEXT_AND_FORM------>
+        <div class="text_and_form-wrap">
+            <div class="text_and_form">
+                <div class="text_and_form_text">
+                    <h2 class="text_and_form_text_big">Курси програмування у Луцьку</h2>
+                    <p class="text_and_form_text_small"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                        distinctio dolor doloremque ipsum
+                        odit. Ad alias amet asperiores consequuntur cum dignissimos dolor eius, eligendi exercitationem
+                        explicabo fugit harum impedit ipsam itaque iure laborum laudantium magni maxime nesciunt nihil
+                        nulla
+                        omnis praesentium quisquam quod recusandae, reprehenderit repudiandae saepe suscipit tenetur
+                        unde ut
+                        velit voluptatem voluptatum!
+                    </p>
+                </div>
+
+                <div class="text_and_form_form">
+                    <h2>Зареєструйся на курси</h2>
+                    <form name="form">
+                        <div>
+                            <p>Іім'я <img class="required" src="img/icons/required.png" alt="icon">
+                            </p>
+                            <label><input required class="input-stile" placeholder="Іім'я" type="text" name="Name">
+                            </label></div>
+
+                        <div>
+                            <p>Прізвище <img class="required" src="img/icons/required.png"
+                                             alt="icon"></p>
+                            <label><input required class="input-stile" placeholder="Прізвище" type="text" name="Name">
+                            </label>
+                        </div>
+                        <div>
+                            <p>Мене більше цікавить <img class="required"
+                                                         src="img/icons/required.png"
+                                                         alt="icon">
+                            </p>
+                            <label>
+                                <input required class="input-stile" placeholder="developer or QA" type="text"
+                                       name="Name">
+                            </label>
+                        </div>
+                        <div>
+                            <p>Номер телефону <img class="required" src="img/icons/required.png"
+                                                   alt="icon"></p>
+                            <label><input required class="input-stile" placeholder="Номер телефону: +38 XXX XX XX XXX"
+                                          pattern="^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$"
+                                          type="tel"
+                                          name="Number">
+                            </label>
+                        </div>
+                        <div>
+                            <p class="input-stile">Email <img class="required" src="img/icons/required.png" alt="icon">
+                            </p>
+
+                            <label><input required class="input-stile" placeholder="Email" type="email"
+                                          name="Email"></label>
+                        </div>
+                        <div class="checkbox">
+                            <label
+                                    class="lable">
+                                <input required type="checkbox">
+                                Я погоджуюсь із <a class="checket" href="#">Політикою Конфіденційності</a><img
+                                    class="required"
+                                    src="img/icons/required.png"
+                                    alt="icon">
+                            </label>
+                        </div>
+                        <div class="form-button">
+                            <button>Зареєструватися зараз</button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
+        </div>
+        <!-----------------SLIDER-->
+        <h2 class="slider-h2">Курс "Розробка сайтів"</h2>
+        <div class="slider-wrap">
 
-            <div class="text_and_form_form">
-                <h2>Зареєструйся на курси</h2>
-                <form name="form">
-                    <div>
-                        <p>Іім'я <img class="required" src="img/icons/required.png" alt="icon">
-                        </p>
-                        <label><input required class="input-stile" placeholder="Іім'я" type="text" name="Name">
-                        </label></div>
+            <div class="slider">
+                <div class="slider-item">
+                    <img src="img/icons/course-icon-1.png" alt="1">
+                    <h4>Розробка сайтів на WordPress</h4>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consequatur consequuntur
+                        dolor illum in magni nulla odio pariatur quae quo saepe sapiente, vel vitae.
+                    </div>
 
-                    <div>
-                        <p>Прізвище <img class="required" src="img/icons/required.png"
-                                         alt="icon"></p>
-                        <label><input required class="input-stile" placeholder="Прізвище" type="text" name="Name">
-                        </label>
-                    </div>
-                    <div>
-                        <p>Мене більше цікавить <img class="required"
-                                                     src="img/icons/required.png"
-                                                     alt="icon">
-                        </p>
-                        <label>
-                            <input required class="input-stile" placeholder="developer or QA" type="text" name="Name">
-                        </label>
-                    </div>
-                    <div>
-                        <p>Номер телефону <img class="required" src="img/icons/required.png"
-                                               alt="icon"></p>
-                        <label><input required class="input-stile" placeholder="Номер телефону: +38 XXX XX XX XXX"
-                                      pattern="^[\+]?3?[\s]?8?[\s]?\(?0\d{2}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$"
-                                      type="tel"
-                                      name="Number">
-                        </label>
-                    </div>
-                    <div>
-                        <p class="input-stile">Email <img class="required" src="img/icons/required.png" alt="icon"></p>
+                </div>
 
-                        <label><input required class="input-stile" placeholder="Email" type="email"
-                                      name="Email"></label>
+                <div class="slider-item">
+                    <img src="img/icons/course-icon-2.png" alt="2">
+                    <h4>Розробка сайтів на WordPress</h4>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consequatur consequuntur
+                        dolor illum in magni nulla odio pariatur quae quo saepe sapiente, vel vitae.
                     </div>
-                    <div class="checkbox">
-                        <label
-                                class="lable">
-                            <input required type="checkbox">
-                            Я погоджуюсь із <a class="checket" href="#">Політикою Конфіденційності</a><img
-                                class="required"
-                                src="img/icons/required.png"
-                                alt="icon">
-                        </label>
+                </div>
+                <div class="slider-item">
+                    <img src="img/icons/course-icon-2.png" alt="2">
+                    <h4>Розробка сайтів на WordPress</h4>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consequatur consequuntur
+                        dolor illum in magni nulla odio pariatur quae quo saepe sapiente, vel vitae.
                     </div>
-                    <div class="form-button">
-                        <button>Зареєструватися зараз</button>
+                </div>
+                <div class="slider-item">
+                    <img src="img/icons/course-icon-3.png" alt="3">
+                    <h4>Розробка сайтів на WordPress</h4>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consequatur consequuntur
+                        dolor illum in magni nulla odio pariatur quae quo saepe sapiente, vel vitae.
                     </div>
-                </form>
+
+                </div>
             </div>
-
         </div>
 
     </main>
     <footer class="footer">footer</footer>
 </div>
-
-
 <script src="https://kit.fontawesome.com/e2c7cd6b6d.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="script/slick.min.js"></script>
+<script src="script/slider.js"></script>
 <script src="script/header_menu.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+@import "slider.css";
+
 html, body {
   margin: 0;
   position: revert;
@@ -79,108 +81,113 @@ $text_color_white: white;
     flex: 1 1 auto;
     margin-top: 90px;
 
-
-    .text_and_form {
-      display: flex;
-      justify-content: center;
+    .text_and_form-wrap {
       background: #f7f7f7;
+      width: 100%;
 
-      &_text, &_form {
-        width: 35%;
+      .text_and_form {
         display: flex;
         justify-content: center;
-        flex-direction: column;
-
-        & h2 {
-          margin-bottom: 0;
-        }
-      }
-
-      &_text {
-        text-align: center;
-        line-height: 25px;
-
-        &_small, &_big {
-          padding: 0 50px 0 0;
-
-        }
-
-        &_small {
-          color: $text_color_gray;
-        }
-      }
-
-      //----------FORM------------//
-      &_form {
+        margin: auto;
+        max-width: 1220px;
 
 
-        & p {
-          margin-bottom: 5px;
-          color: $text_color_gray;
+        &_text, &_form {
+          width: 35%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
 
-          & .required {
-            height: 7px;
+          & h2 {
+            margin-bottom: 0;
           }
         }
 
-        & label .required {
-          height: 8px;
+        &_text {
+          text-align: center;
+          line-height: 25px;
 
-        }
+          &_small, &_big {
+            padding: 0 50px 0 0;
 
-        & label .input-stile {
-          width: 90%;
-          height: 40px;
-          border-radius: 5px;
-          border: $text_color_gray solid 1px;
-          padding-left: 5px;
+          }
 
-        }
-
-        & input {
-          &:focus-visible {
-            box-shadow: 0 0 8px 2px #B1E9FF;
-            border: 1px solid #B1E9FF;
-            background: #fff;
-            color: #525865;
-            border-radius: 4px;
-            outline: none;
-
-            transition: .18s ease-out;
+          &_small {
+            color: $text_color_gray;
           }
         }
 
-        .checkbox {
-          margin-top: 15px;
+        //----------FORM------------//
+        &_form {
 
-          .lable {
+
+          & p {
+            margin-bottom: 5px;
             color: $text_color_gray;
 
-            & a {
-              color: #347bb7;
-              text-decoration: none;
+            & .required {
+              height: 7px;
             }
           }
-        }
 
-        & .form-button {
-          text-align: center;
-
-          button {
-            text-align: center;
-            color: white;
-            height: 40px;
-            width: 300px;
-            padding: 13px 30px;
-            background: #347bb7;
-            border-radius: 40px;
-            transition: background 2s;
-            margin: 20px;
-            border: none;
-            font-family: 'PT Sans', sans-serif;
+          & label .required {
+            height: 8px;
 
           }
 
+          & label .input-stile {
+            width: 90%;
+            height: 40px;
+            border-radius: 5px;
+            border: $text_color_gray solid 1px;
+            padding-left: 5px;
+
+          }
+
+          & input {
+            &:focus-visible {
+              box-shadow: 0 0 8px 2px #B1E9FF;
+              border: 1px solid #B1E9FF;
+              background: #fff;
+              color: #525865;
+              border-radius: 4px;
+              outline: none;
+
+              transition: .18s ease-out;
+            }
+          }
+
+          .checkbox {
+            margin-top: 15px;
+
+            .lable {
+              color: $text_color_gray;
+
+              & a {
+                color: #347bb7;
+                text-decoration: none;
+              }
+            }
+          }
+
+          & .form-button {
+            text-align: center;
+
+            button {
+              text-align: center;
+              color: white;
+              height: 40px;
+              width: 300px;
+              padding: 13px 30px;
+              background: #347bb7;
+              border-radius: 40px;
+              transition: background 2s;
+              margin: 20px;
+              border: none;
+              font-family: 'PT Sans', sans-serif;
+
+            }
+          }
         }
       }
     }
@@ -246,35 +253,37 @@ $text_color_white: white;
       flex: 1 1 auto;
       margin-top: 90px;
 
-      .text_and_form {
-        display: flex;
-        flex-direction: column;
+      .text_and_form-wrap {
+        .text_and_form {
+          display: flex;
+          flex-direction: column;
 
-        &_text {
-          width: 100%;
+          &_text {
+            width: 100%;
 
-          &_big, &_small {
-            padding: 10px;
-          }
-
-        }
-
-        &_form {
-          width: 100%;
-
-          & h2 {
-            text-align: center;
+            &_big, &_small {
+              padding: 10px;
+            }
 
           }
 
-          & form {
-            padding-left: 15px;
+          &_form {
+            width: 100%;
 
-            & .form-button {
-              padding-right: 10px;
+            & h2 {
+              text-align: center;
 
-              button {
-                width: 86%
+            }
+
+            & form {
+              padding-left: 15px;
+
+              & .form-button {
+                padding-right: 10px;
+
+                button {
+                  width: 86%
+                }
               }
             }
           }
@@ -283,6 +292,3 @@ $text_color_white: white;
     }
   }
 }
-
-
-// Програмування це крута можливість реалізувати себе в житті, так що можна сказати що це і є моєю цілью

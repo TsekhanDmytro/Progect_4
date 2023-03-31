@@ -1,3 +1,4 @@
+@import "slider.css";
 html, body {
   margin: 0;
   position: revert;
@@ -57,48 +58,53 @@ html, body {
   flex: 1 1 auto;
   margin-top: 90px;
 }
-.wraper .main .text_and_form {
+.wraper .main .text_and_form-wrap {
+  background: #f7f7f7;
+  width: 100%;
+}
+.wraper .main .text_and_form-wrap .text_and_form {
   display: flex;
   justify-content: center;
-  background: #f7f7f7;
+  margin: auto;
+  max-width: 1220px;
 }
-.wraper .main .text_and_form_text, .wraper .main .text_and_form_form {
+.wraper .main .text_and_form-wrap .text_and_form_text, .wraper .main .text_and_form-wrap .text_and_form_form {
   width: 35%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.wraper .main .text_and_form_text h2, .wraper .main .text_and_form_form h2 {
+.wraper .main .text_and_form-wrap .text_and_form_text h2, .wraper .main .text_and_form-wrap .text_and_form_form h2 {
   margin-bottom: 0;
 }
-.wraper .main .text_and_form_text {
+.wraper .main .text_and_form-wrap .text_and_form_text {
   text-align: center;
   line-height: 25px;
 }
-.wraper .main .text_and_form_text_small, .wraper .main .text_and_form_text_big {
+.wraper .main .text_and_form-wrap .text_and_form_text_small, .wraper .main .text_and_form-wrap .text_and_form_text_big {
   padding: 0 50px 0 0;
 }
-.wraper .main .text_and_form_text_small {
+.wraper .main .text_and_form-wrap .text_and_form_text_small {
   color: gray;
 }
-.wraper .main .text_and_form_form p {
+.wraper .main .text_and_form-wrap .text_and_form_form p {
   margin-bottom: 5px;
   color: gray;
 }
-.wraper .main .text_and_form_form p .required {
+.wraper .main .text_and_form-wrap .text_and_form_form p .required {
   height: 7px;
 }
-.wraper .main .text_and_form_form label .required {
+.wraper .main .text_and_form-wrap .text_and_form_form label .required {
   height: 8px;
 }
-.wraper .main .text_and_form_form label .input-stile {
+.wraper .main .text_and_form-wrap .text_and_form_form label .input-stile {
   width: 90%;
   height: 40px;
   border-radius: 5px;
   border: gray solid 1px;
   padding-left: 5px;
 }
-.wraper .main .text_and_form_form input:focus-visible {
+.wraper .main .text_and_form-wrap .text_and_form_form input:focus-visible {
   box-shadow: 0 0 8px 2px #B1E9FF;
   border: 1px solid #B1E9FF;
   background: #fff;
@@ -107,20 +113,20 @@ html, body {
   outline: none;
   transition: 0.18s ease-out;
 }
-.wraper .main .text_and_form_form .checkbox {
+.wraper .main .text_and_form-wrap .text_and_form_form .checkbox {
   margin-top: 15px;
 }
-.wraper .main .text_and_form_form .checkbox .lable {
+.wraper .main .text_and_form-wrap .text_and_form_form .checkbox .lable {
   color: gray;
 }
-.wraper .main .text_and_form_form .checkbox .lable a {
+.wraper .main .text_and_form-wrap .text_and_form_form .checkbox .lable a {
   color: #347bb7;
   text-decoration: none;
 }
-.wraper .main .text_and_form_form .form-button {
+.wraper .main .text_and_form-wrap .text_and_form_form .form-button {
   text-align: center;
 }
-.wraper .main .text_and_form_form .form-button button {
+.wraper .main .text_and_form-wrap .text_and_form_form .form-button button {
   text-align: center;
   color: white;
   height: 40px;
@@ -172,29 +178,29 @@ html, body {
     flex: 1 1 auto;
     margin-top: 90px;
   }
-  .wraper .main .text_and_form {
+  .wraper .main .text_and_form-wrap .text_and_form {
     display: flex;
     flex-direction: column;
   }
-  .wraper .main .text_and_form_text {
+  .wraper .main .text_and_form-wrap .text_and_form_text {
     width: 100%;
   }
-  .wraper .main .text_and_form_text_big, .wraper .main .text_and_form_text_small {
+  .wraper .main .text_and_form-wrap .text_and_form_text_big, .wraper .main .text_and_form-wrap .text_and_form_text_small {
     padding: 10px;
   }
-  .wraper .main .text_and_form_form {
+  .wraper .main .text_and_form-wrap .text_and_form_form {
     width: 100%;
   }
-  .wraper .main .text_and_form_form h2 {
+  .wraper .main .text_and_form-wrap .text_and_form_form h2 {
     text-align: center;
   }
-  .wraper .main .text_and_form_form form {
+  .wraper .main .text_and_form-wrap .text_and_form_form form {
     padding-left: 15px;
   }
-  .wraper .main .text_and_form_form form .form-button {
+  .wraper .main .text_and_form-wrap .text_and_form_form form .form-button {
     padding-right: 10px;
   }
-  .wraper .main .text_and_form_form form .form-button button {
+  .wraper .main .text_and_form-wrap .text_and_form_form form .form-button button {
     width: 86%;
   }
 }
