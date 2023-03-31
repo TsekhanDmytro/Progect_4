@@ -68,6 +68,9 @@ html, body {
   justify-content: center;
   flex-direction: column;
 }
+.wraper .main .text_and_form_text h2, .wraper .main .text_and_form_form h2 {
+  margin-bottom: 0;
+}
 .wraper .main .text_and_form_text {
   text-align: center;
   line-height: 25px;
@@ -78,11 +81,48 @@ html, body {
 .wraper .main .text_and_form_text_small {
   color: gray;
 }
-.wraper .main .text_and_form_form div label .input-stile {
-  width: 100%;
+.wraper .main .text_and_form_form p {
+  margin-bottom: 5px;
+  color: gray;
+}
+.wraper .main .text_and_form_form p .required {
+  height: 7px;
+}
+.wraper .main .text_and_form_form label .required {
+  height: 8px;
+}
+.wraper .main .text_and_form_form label .input-stile {
+  width: 90%;
   height: 40px;
   border-radius: 5px;
   border: gray solid 1px;
+  padding-left: 5px;
+}
+.wraper .main .text_and_form_form .checkbox {
+  margin-top: 15px;
+}
+.wraper .main .text_and_form_form .checkbox .lable {
+  color: gray;
+}
+.wraper .main .text_and_form_form .checkbox .lable a {
+  color: #347bb7;
+  text-decoration: none;
+}
+.wraper .main .text_and_form_form .form-button {
+  text-align: center;
+}
+.wraper .main .text_and_form_form .form-button button {
+  text-align: center;
+  color: white;
+  height: 40px;
+  width: 300px;
+  padding: 13px 30px;
+  background: #347bb7;
+  border-radius: 40px;
+  transition: background 2s;
+  margin: 20px;
+  border: none;
+  font-family: "PT Sans", sans-serif;
 }
 @media screen and (max-width: 680px) {
   .wraper .header .header_item .fa-x {
@@ -127,14 +167,26 @@ html, body {
     display: flex;
     flex-direction: column;
   }
-  .wraper .main .text_and_form .text_and_form_text {
+  .wraper .main .text_and_form_text {
     width: 100%;
   }
-  .wraper .main .text_and_form .text_and_form_text_big, .wraper .main .text_and_form .text_and_form_text_small {
+  .wraper .main .text_and_form_text_big, .wraper .main .text_and_form_text_small {
     padding: 10px;
   }
-  .wraper .main .text_and_form .text_and_form_form {
-    padding: 10px;
+  .wraper .main .text_and_form_form {
+    width: 100%;
+  }
+  .wraper .main .text_and_form_form h2 {
+    text-align: center;
+  }
+  .wraper .main .text_and_form_form form {
+    padding-left: 15px;
+  }
+  .wraper .main .text_and_form_form form .form-button {
+    padding-right: 10px;
+  }
+  .wraper .main .text_and_form_form form .form-button button {
+    width: 86%;
   }
 }
 
