@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     });
 });
-// ----------------------SLIDER-RESPONSE
+// ----------------------SLIDER-RESPONSE----//
 $(document).ready(function () {
     $('.sliderR').slick({
         infinite: true,
@@ -40,6 +40,6 @@ $(document).ready(function () {
         dots: true,
         autoplay: true,
         fade: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 10000,
     });
 });

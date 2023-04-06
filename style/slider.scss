@@ -36,12 +36,15 @@
           }
 
           & h4 {
+            text-align: center;
             padding-bottom: 5px;
             border-bottom: solid 2px #7bbbe7;
+            color: gray;
           }
 
           & div {
             text-align: center;
+            color: gray;
           }
         }
       }
@@ -52,6 +55,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 0;
 
       & li {
         list-style: none;
@@ -77,21 +81,25 @@
 .sliderR-wrap {
   width: 100%;
 
+  & h2 {
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+
   & .sliderR {
     overflow: hidden;
     max-width: 1220px;
     margin: auto;
     margin-bottom: 50px;
     position: relative;
-
+z-index: 0;
 
     & .slick-list {
-      width: 75%;
-      justify-content: center;
       overflow: hidden;
       display: flex;
       margin: auto;
-      padding: 20px;
+      padding: 10px 100px;
 
       & .slick-track {
         display: flex;
@@ -105,27 +113,35 @@
           margin: 10px;
 
 
-          & h2 {
-            padding-bottom: 5px;
-          }
-
           & div {
             text-align: center;
             line-height: 25px;
+            color: gray;
+
+            & h4 {
+              margin-bottom: 3px;
+              margin-top: 15px;
+              color: black;
+            }
+
+            & p {
+              color: gray;
+              margin: 0;
+            }
 
             .fa-quote-left {
               position: absolute;
               font-size: 35px;
-              left: -25px;
+              left: -8%;
               color: #c4c4c4;
-              top: 50px;
+              top: -14%;
             }
 
             .fa-quote-right {
               position: absolute;
               font-size: 35px;
               color: #c4c4c4;
-              right: -25px;
+              right: -10%;
             }
           }
         }
@@ -137,6 +153,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 0;
 
       & li {
         list-style: none;
@@ -156,4 +173,28 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 680px) {
+  .sliderR-wrap .sliderR .slick-list {
+    padding: 0 35px;
+
+    & .slick-track .sliderR-item div {
+      .fa-quote-left {
+        top: 0;
+        left: -5%;
+      }
+
+      .fa-quote-right {
+        right: -5%;
+      }
+
+      .fa-solid {
+        font-size: 25px;
+      }
+
+    }
+
+  }
+
 }
