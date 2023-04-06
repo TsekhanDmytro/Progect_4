@@ -1,15 +1,16 @@
-.slider-h2 {
+//-----------------SLIDER-DEVELOPMENT-COURSES--//
+.sliderDC-h2 {
   text-align: center;
 }
 
-.slider-wrap {
+.sliderDC-wrap {
   width: 100%;
 
-  & .slider {
+  & .sliderDC {
     overflow: hidden;
     max-width: 1220px;
     margin: auto;
-
+    margin-bottom: 50px;
 
     & .slick-list {
       width: 75%;
@@ -22,7 +23,7 @@
         display: flex;
         align-items: center;
 
-        & .slider-item {
+        & .sliderDC-item {
           display: flex;
           justify-content: center;
           flex-direction: column;
@@ -72,3 +73,87 @@
   }
 }
 
+
+.sliderR-wrap {
+  width: 100%;
+
+  & .sliderR {
+    overflow: hidden;
+    max-width: 1220px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+
+
+    & .slick-list {
+      width: 75%;
+      justify-content: center;
+      overflow: hidden;
+      display: flex;
+      margin: auto;
+      padding: 20px;
+
+      & .slick-track {
+        display: flex;
+        align-items: center;
+
+        & .sliderR-item {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          margin: 10px;
+
+
+          & h2 {
+            padding-bottom: 5px;
+          }
+
+          & div {
+            text-align: center;
+            line-height: 25px;
+
+            .fa-quote-left {
+              position: absolute;
+              font-size: 35px;
+              left: -25px;
+              color: #c4c4c4;
+              top: 50px;
+            }
+
+            .fa-quote-right {
+              position: absolute;
+              font-size: 35px;
+              color: #c4c4c4;
+              right: -25px;
+            }
+          }
+        }
+      }
+    }
+
+
+    & .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & li {
+        list-style: none;
+        margin: 0 10px;
+
+        & button {
+          font-size: 0;
+          width: 10px;
+          height: 15px;
+          background: #b3b3b3;
+          border-radius: 50%;
+        }
+
+        &.slick-active button {
+          background: #676767;
+        }
+      }
+    }
+  }
+}

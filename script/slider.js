@@ -1,5 +1,6 @@
+//--------------- SLIDER-DEVELOPMENT-COURSES--------//
 $(document).ready(function () {
-    $('.slider').slick({
+    $('.sliderDC').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -20,11 +21,25 @@ $(document).ready(function () {
             {
                 breakpoint: 600,
                 settings: {
+                    dots: true,
                     slidesToShow: 1,
 
                 }
             }
         ]
 
+    });
+});
+// ----------------------SLIDER-RESPONSE
+$(document).ready(function () {
+    $('.sliderR').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        fade: true,
+        autoplaySpeed: 2000,
     });
 });

@@ -18,6 +18,7 @@ html, body {
   background: #ffffff;
   box-shadow: 0 0 10px 3px rgba(119, 119, 119, 0.4666666667);
   position: fixed;
+  z-index: 1;
 }
 .wraper .header_item {
   width: 1220px;
@@ -139,6 +140,30 @@ html, body {
   border: none;
   font-family: "PT Sans", sans-serif;
 }
+.wraper .main .blue-line {
+  background: #347bb7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wraper .main .blue-line-box {
+  text-align: center;
+  margin: 50px 20px;
+}
+.wraper .main .blue-line-img {
+  width: 75px;
+  height: 50px;
+}
+.wraper .main .blue-line-num {
+  margin: 15px;
+  color: white;
+  font-size: 25px;
+}
+.wraper .main .blue-line-text {
+  color: white;
+  font-size: 14px;
+}
 @media screen and (max-width: 680px) {
   .wraper .header .header_item .fa-x {
     display: none;
@@ -202,6 +227,15 @@ html, body {
   }
   .wraper .main .text_and_form-wrap .text_and_form_form form .form-button button {
     width: 86%;
+  }
+  .wraper .blue-line-box {
+    width: 120px;
+  }
+  .wraper .blue-line-box .blue-line-num {
+    margin: 0;
+  }
+  .wraper .blue-line-box .blue-line-text {
+    font-size: 14px;
   }
 }
 

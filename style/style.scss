@@ -25,6 +25,7 @@ $text_color_white: white;
     background: #ffffff;
     box-shadow: 0 0 10px 3px #7777;
     position: fixed;
+    z-index: 1;
 
     &_item {
       width: 1220px;
@@ -68,8 +69,6 @@ $text_color_white: white;
           border-radius: 40px;
           transition: .25s ease-out;
           margin: 5px;
-
-
         }
       }
 
@@ -191,6 +190,37 @@ $text_color_white: white;
         }
       }
     }
+
+    .blue-line {
+      background: #347bb7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      &-box {
+        text-align: center;
+        margin: 50px 20px;
+
+      }
+
+      &-img {
+        width: 75px;
+        height: 50px;
+      }
+
+      &-num {
+        margin: 15px;
+        color: $text_color_white;
+        font-size: 25px;
+      }
+
+      &-text {
+        color: $text_color_white;
+        font-size: 14px;
+
+      }
+    }
   }
 
   .footer {
@@ -289,6 +319,21 @@ $text_color_white: white;
           }
         }
       }
+    }
+
+    .blue-line {
+      &-box {
+        width: 120px;
+
+        & .blue-line-num {
+          margin: 0;
+        }
+
+        & .blue-line-text {
+          font-size: 14px
+        }
+      }
+
     }
   }
 }
